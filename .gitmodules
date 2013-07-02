@@ -1,0 +1,3 @@
+[submodule "js/sammyjs"]
+	path = js/sammyjs
+	url = https://github.com/quirkey/sammy.git

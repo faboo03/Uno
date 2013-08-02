@@ -57,9 +57,56 @@
         </div>
 
       <h1>Règles de base</h1>
-      <h2 class="">Déroulement du jeu</h2>
       <div class="row">
-	      <div class="span6 tile">
+      	<h2 class="">Les cartes</h2>
+	    <div class="span4">
+      		<h3>
+	      		Les cartes de classiques 
+      		</h3> 
+      		<p>Allant de 0 à 9, elles existent en 4 couleurs et en 2 exemplaires par couleur. Elles n'ont pas d'actions spéciales en dehors du 0.</p>
+     			<h5>
+      			Cas particuliers : 
+     			</h5>
+     			<p>Le zéro : Existe en un seul exemplaire par couleur. Lorsqu'un 0 seul est joué, la personne qui le joue <u>doit</u> alors échanger son jeu avec le joueur de son choix.</p>
+	      </div>
+	    <div class="span4">
+      		<h3>
+	      		Les cartes d'actions
+      		</h3> 
+      		<p>Il existe 3 type de carte action : <br />
+      			<ul>
+      				<li>Les sens interdit : Lorsqu'il est joué, le tour de la personne qui suit est sauté. <br />
+      					Si il est joué en double, les 2 personnes qui suivent sont alors ignorées. <br />
+      					Si le ou les joueurs dont le tour est sauté possède un sens interdit, peut importe la couleur, il peut alors le jouer et c'est donc son voisin qui perd son tour. 
+      				</li>
+      				<li>
+      					Les changements de sens : Lorsqu'il est joué, le sens du jeu est inversé. 
+      				</li>
+      				<li>
+      					les +2 : Lorsqu'il est joué, une chaine d'agression est lancé. Voir le chapitre dédié.
+      				</li>
+      			</ul>
+      		</p>
+	      </div>
+	    <div class="span4">
+      		<h3>
+	      		Les cartes noires
+      		</h3> 
+      		<p><b>Particularité des cartes noires : </b> Un joueur ne peut jouer cette carte que lorsqu'il ne peut pas joueur une autre carte noire, en dehors des chaines d'agression et des coupes.
+      			Si ce n'est pas le cas et qu'un autre joueur décide de l'accuser en annoncant d'une voix claire et distincte "Menteur", alors 6 cartes sont mises en jeu et vont au joueur qui aura tord. Si le jeu s'avère être illisite, le menteur reprend son +4 et joue la carte qu'il aurait alors du jouer.
+  			</p>
+  			<p>
+      			Il existe 4 cartes pour chacun de ces 2 types spéciaux.<br />
+      			<ul>
+      				<li>Les changements de couleur : Le joueur doit choisir une couleur qui est par la suite la couleur courante.</li>
+      				<li>Les +4 : Le joueur doit choisir une couleur qui est la couleur qui débute la chaine d'agression. Une fois que la couleur est annoncée, la carte est considéré comme un +2 de la couleur demandée. Seul exception à cela, ne peut être joué après un +4, chaine d'agression ou pas, qu'une carte de la couleur demandée.</li>
+      			</ul>
+      		</p>
+	      </div>
+      </div>
+      <div class="row">
+      	<h2 class="">Déroulement du jeu</h2>
+	      <div class="span4 tile">
 		      		<h3>
 			      		Distribution 
 		      		</h3> 
@@ -78,15 +125,32 @@
 			      		</li>
 		      		</ol>
 	      			<h5>
-		      			Cas particuliers
+		      			Cas particuliers : 
 	      			</h5>
+	      			<p>
+	      				Lorsque la première carte retournée est une carte d'action (sens interdit, +2 etc), la carte est appliquée sur le joueur qui suit comme si celui qui distribue venait de la jouer.
+		      			<br />Si c'est une carte qui nécessite une décision du type "Carte noire" alors c'est le joueur qui distribue qui détermine la couleur à suivre.
+		      			<br />Si il s'agit d'un 0, il est simplement ignoré
+	      			</p>
 	      </div>
-	      <div class="span6">
-	      		
+	      <div class="span7">
+		      		<h3>
+			      		Déroulement et fin de jeu
+		      		</h3> 
+		      		<p>
+		      			A son tour, chaque joueur peut jouer: 
+		      			<ul>
+			      			<li> Une carte de la couleur de la dernière carte jouée, 2 si elles sont identiques.</li>
+			      			<li> Une carte de la valeur de la dernière carte jouée. 2 si elles sont identiques.</li>
+			      			<li> Une somme de 2 cartes de la même couleur dont la valeur équivaut à la valeur de la dernière carte jouée.</li>
+			      			<li> Une soustraction de 2 cartes de la même couleur dont la valeur équivaut à la valeur de la dernière carte jouée. La plus grande ira en dessous. Par exemple: 3 = 7-4 et pas 4-7 </li>
+		      			</ul>
+		      		</p>
 	      </div>
       </div>
-	
 	</div>
+	<footer>
+	</footer>
 	
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-1.8.3.min.js"></script>

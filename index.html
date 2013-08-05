@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
   <head>
     <meta charset="utf-8">
     <title>Uno by stadline</title>
@@ -138,7 +138,7 @@
 			      		Déroulement et fin de jeu
 		      		</h3> 
 		      		<p>
-		      			A son tour, chaque joueur peut jouer: 
+		      			<strong>A son tour</strong>, chaque joueur peut jouer: 
 		      			<ul>
 			      			<li> Une carte de la couleur de la dernière carte jouée, 2 si elles sont identiques.</li>
 			      			<li> Une carte de la valeur de la dernière carte jouée. 2 si elles sont identiques.</li>
@@ -146,12 +146,83 @@
 			      			<li> Une soustraction de 2 cartes de la même couleur dont la valeur équivaut à la valeur de la dernière carte jouée. La plus grande ira en dessous. Par exemple: 3 = 7-4 et pas 4-7 </li>
 		      			</ul>
 		      		</p>
+		      		<p>
+		      			<strong>A tout moment</strong>, chaque joueur peut couper:
+		      			<ul>
+		      				<li>Si il possède la même carte que la dernière carte jouée</li>
+		      				<li>Si il possède une somme ou une soustraction de la couleur demandée, dont la valeur est équivalente à la dernière carte jouée.</li>
+		      			</ul> 
+		      		</p>
+		      		<p>
+		      			Lorsqu'un joueur n'a plus qu'une seule carte, il doit dire UNO. Si un autre joueur lui fait remarquer avant que ce dernier ne l'ait annoncé, alors il prend 2 cartes. 
+		      		</p>
+		      		<p>
+		      			La partie se termine lorsqu'un joueur pose sa dernière carte et qu'il ne s'agit pas d'une chaine d'agression, sinon la chaine doit se terminer avant que le joueur soit déclaré vainqueur. 
+		      		</p>
 	      </div>
       </div>
+      <div class="row">
+       	<h2 class="">Règles avancées</h2>
+      	<div class="span4"> 
+      		<h3>Chaines d'agressions</h3>
+      		<p>
+      			Lorsqu'un joueur joue un +2 ou un +4, une chaine d'agression est lancée afin de déterminer qui prendra les cartes. <br/>
+      			Lorsque l'on est dans une chaine d'agression, le joueur suivant peut : 
+      			<ul>
+      				<li>Jouer un sens interdit de la même couleur. C'est alors au joueur suivant de répondre à la chaine d'agression.</li>
+      				<li>Jouer un changement de sens de la même couleur. C'est alors au joueur précedent de répondre à la chaine d'agression.</li>
+      				<li>Jouer un +2, peut importe la couleur. On ajoute alors +2 au compteur de carte et c'est au joueur suivant de répondre. Attention, après un +4, le +2 doit être un +2 de la couleur précisée par le +4.</li>
+      			</ul>
+      			Lors d'une phase d'agression, on peut couper en jouant la même carte que la carte demandée uniquement. <br/>
+      			Après un +4, on peut couper en jouant un +2 de la couleur demandée uniquement. <br/>
+      			Lorsqu'un joueur ne peut plus se défendre, alors il doit prendre le nombre de carte au compteur. Il peut alors invoquer la règle du "Quitte ou double".
+      		</p>
+      	</div>
+      	<div class="span4"> 
+      		<h3>Echange de jeux</h3>
+      		<p>
+      			Cette règle intervient dans 2 cas, soit lors du jeu d'un 0, soit lorsque deux 7 de la même couleur sont joués ensemble ou à la suite. Attention : Jouer les 7 ou les 0 dans des sommes ou des soustractions, annule leur effet.
+      			<ul>
+      				<li>Si un 0 est joué : Le joueur qui joue ce dernier peut alors échanger son jeu avec le joueur de son choix.</li>
+      				<li>Si deux 7 de la même couleur sont joué : Tout les joueurs échangent leur jeu avec le joueur qui suit, selon le sens actuel de jeu.</li>
+      			</ul>
+      			Lorsque qu'un jeu ne possède qu'une seule carte et qu'il transite dans un échange, le nouveau propriétaire doit énoncer de nouveau UNO. 
+      		</p>
+      	</div>
+      	<div class="span4"> 
+      		<h3>Quitte ou double</h3>
+      		<p>
+      			Lorsqu'un joueur est contraint de prendre des cartes après une chaine d'agression, il peut invoquer la règle du "Quitte ou double".<br/>
+      			Le donneur lui met alors son nombre de carte de coté et demande une couleur à ce dernier. Si la carte retournée est de la bonne couleur ou bien noire, alors le joueur ne prend pas ses cartes, sinon il prend le double de cartes.<br/>
+      			Si la carte qui est retournée est une carte d'action, alors l'action est appliquée comme si le parieur avait joué.
+      		</p>
+      	</div>
+      </div>
 	</div>
+
 	<footer>
-	</footer>
-	
+      <div class="container">
+        <div class="row">
+          <div class="span7">
+            <h3 class="footer-title">Stadline</h3>
+            <p>Stadline est une agence web spécialisée dans le monde du sport.<br>
+	            Pour en savoir plus : <a href="www.stadline.com">Stadline.com</a>
+            </p>
+          </div> <!-- /span8 -->
+
+          <div class="span5">
+            <div class="footer-banner">
+              <h3 class="footer-title">Règles de UNO <small>by Stadline</small></h3>
+              <ul>
+                <li>Les règles sont distribuées gratuitement</li>
+                <li>Si vous souhaitez effectuer des motifications, <strong>feel free to fork</strong></li>
+                <li>Pour vos compétitions : <a targer="_blank" href="www.tournikoti.com">www.tournikoti.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>	
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
